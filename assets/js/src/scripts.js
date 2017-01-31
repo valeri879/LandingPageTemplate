@@ -17,5 +17,21 @@ $(document).ready(function() {
         slidesPerView: 1
     });
 
+    //scroll
+    function scroll() {
+        var navBar = $('#navbar');
+
+        $(window).scroll(function() {
+            var scrTop = $(window).scrollTop();
+            if (scrTop >= 10) {
+                navBar.addClass('fixed');
+            } else {
+                navBar.removeClass('fixed');
+            }
+        });
+
+    }
+    scroll();
+
 
 });
