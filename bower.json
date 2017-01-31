@@ -1,0 +1,27 @@
+{
+  "name": "Landing Page",
+  "description": "Company Landing Page",
+  "main": "index.html",
+  "authors": [
+    "Val Do (Val kharitonashvili)"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Landing",
+    "Page",
+    "Portfolio",
+    "Template",
+    "Free"
+  ],
+  "homepage": "https://github.com/valeri879/LandingPageTemplate",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "^4.2.7"
+  }
+}
