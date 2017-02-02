@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <!-- fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat|Roboto" rel="stylesheet">
     <!-- styles -->
@@ -21,15 +22,28 @@
 
     <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-            <a href="" class="navbar-brand">Logo</a>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a class="nav-links" href="#">Main</a></li>
-                <li class="active"><a href="#">About</a></li>
-                <li><a class="nav-links" href="#">Work</a></li>
-                <li><a class="nav-links" href="#">Blog</a></li>
-                <li><a class="nav-links" href="#">Contact</a></li>
-            </ul>
+            <div class="nav-header">
+                <a href="#" class="navbar-brand">Logo</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation" aria-expanded="false" aria-controls="navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            </div>
+
+            <div id="navigation" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="nav-links" href="#">Main</a></li>
+                    <li class="active"><a href="#">About</a></li>
+                    <li><a class="nav-links" href="#">Work</a></li>
+                    <li><a class="nav-links" href="#">Blog</a></li>
+                    <li><a class="nav-links" href="#">Contact</a></li>
+                </ul>
+            </div>
+
         </div>
+
     </nav>
     <section id="section-1" class="main">
         <!-- Slider main container -->
