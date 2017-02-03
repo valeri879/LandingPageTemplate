@@ -2,7 +2,9 @@
 @import "libs/bootstrap"; //plugins scss files
 @import "vendors/variables";
 @import "plugins/swiper";
+@import "animations/scrollDown";
 .main {
+    position: relative;
     width: 100%;
     min-height: 100vh;
     .swiper-container {
@@ -13,6 +15,30 @@
         background-size: cover;
         background-repeat: no-repeat;
         text-align: center;
+    }
+    .scrillDown {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 50%;
+        margin: 0 0 0 -20px;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+        bottom: 50px;
+        z-index: 10;
+        @include transform(rotate(45deg));
+        animation: shake 3s infinite;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 20px;
+            height: 20px;
+            bottom: 10px;
+            left: 28px;
+            margin: 0 0 0 -20px;
+            border-bottom: 1px solid #fff;
+            border-right: 1px solid #fff;
+        }
     }
 }
 

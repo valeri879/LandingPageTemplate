@@ -1,8 +1,10 @@
 $(document).ready(function() {
 
-    var mySwiper = new Swiper('.swiper-container', {
+    var mySwiper = new Swiper('.main .swiper-container', {
         speed: 400,
-        spaceBetween: 0
+        spaceBetween: 0,
+        nextButton: '.main .swiper-button-next',
+        prevButton: '.main .swiper-button-prev',
     });
 
     var partnersSlider = new Swiper('.partners .swiper-container', {
