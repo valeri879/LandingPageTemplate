@@ -7,6 +7,13 @@ $(document).ready(function() {
         prevButton: '.main .swiper-button-prev',
     });
 
+    var testimonials = new Swiper('.testimonials .swiper-container', {
+        speed: 400,
+        spaceBetween: 0,
+        nextButton: '.testimonials .swiper-button-next',
+        prevButton: '.testimonials .swiper-button-prev',
+    });
+
     var partnersSlider = new Swiper('.partners .swiper-container', {
         speed: 400,
         spaceBetween: 0,

@@ -40,13 +40,25 @@
             border-right: 1px solid #fff;
         }
     }
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 90px;
+        height: 90px;
+        background: transparent;
+        text-align: center;
+        border-radius: 5px;
+        @include transition(all .5s);
+        &:hover{
+            background: rgba(0,0,0,.5);
+        }
+    }
 }
 
 .navbar {
     &.fixed {
-        @include transition(all 0.2s);
+        @include transition(all .1s);
+        transform: translate(0, -20px);
         background: $Pink;
-        top: 0;
         .icon-bar {
             background-color: #fff;
         }
@@ -146,6 +158,33 @@
             }
             text-transform: uppercase;
         }
+        @media screen and (max-width: 1024px){
+            h3{
+                font-size: 42px;
+            }
+            p{
+                font-size: 100px;
+                line-height: 100px;
+            }
+        }
+        @media screen and (max-width: 768px){
+            h3{
+                font-size: 42px;
+            }
+            p{
+                font-size: 70px;
+                line-height: 100px;
+            }
+        } 
+        @media screen and (max-width: 425px){
+            h3{
+                font-size: 32px;
+            }
+            p{
+                font-size: 50px;
+                line-height: 50px;
+            }
+        } 
     }
 }
 
@@ -248,8 +287,7 @@
         }
         &:hover {
             @include transition(all 0.2s);
-            left: -10px;
-            top: -10px;
+            transform: translate( -10px, -10px);
             &::before {
                 position: absolute;
                 @include transition(all 0.2s);
@@ -304,6 +342,7 @@
 }
 
 .services {
+
     h5 {
         margin: 0;
         font: {
@@ -327,6 +366,7 @@
     .icon {
         text-align: center;
         color: $Green;
+        margin: 0 0 20px 0;
     }
     .fa {
         font-size: 32px;
@@ -337,6 +377,12 @@
         background: #e5e5e5;
         margin: 50px 0;
         display: block;
+    }
+        @media screen and (max-width: 768px){
+        text-align: center;
+        p{
+            margin: 0 0 20px 0;
+        }
     }
 }
 
@@ -470,6 +516,13 @@
         height: 3px;
         background: $Pink;
         margin: 0 10px 0 0;
+    }
+    .fa-arrow-circle-left,
+    .fa-arrow-circle-right {
+        position: relative;
+        color: $Pink;
+        font-size: 38px;
+        top: -30px;
     }
 }
 
@@ -641,6 +694,13 @@
     background-size: cover;
     .image {
         text-align: center;
+        margin: 0 0 25px 0;
+    }
+    @media screen and (max-width : 768px){
+        text-align: center;
+        img{
+            max-width: 150px;
+        }
     }
     img {
         width: 100%;
@@ -694,6 +754,11 @@
     }
     .blog-image {
         position: relative;
+        &:hover{
+            .time-badge{
+                background: $Pink;
+            }
+        }
     }
     img {
         width: 100%;
@@ -707,6 +772,7 @@
         background: $Green;
         left: -8px;
         bottom: 10px;
+        @include transition(all .2s);
         .number {
             display: block;
             color: #fff;
@@ -768,6 +834,9 @@
         }
         .fa {
             color: $Green;
+        }
+        @media screen and (max-width: 768px){
+            margin: 0 0 20px 0;
         }
     }
 }
@@ -897,6 +966,9 @@
                 border-color: $Pink;
             }
         }
+        @media screen and (max-width: 768px){
+            margin: 0 0 20px;
+        }
     }
     .copyright {
         padding: 25px 0;
@@ -949,13 +1021,15 @@
             width: 100%;
         }
         .blog-row {
-            height: 80px;
             margin: 0 0 30px;
         }
         .vertical-center {
             min-height: 100%;
             flex-direction: column;
             text-align: left;
+        }
+        @media screen and (max-width: 768px){
+            margin: 0 0 20px;
         }
     }
     .image-container {
@@ -973,6 +1047,9 @@
                 style: italic;
             }
             color: $LightGrey;
+        }
+        @media screen and (max-width: 768px){
+            margin: 0 0 20px;
         }
     }
 }
