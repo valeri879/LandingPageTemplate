@@ -74,5 +74,11 @@ $(document).ready(function() {
     }
     scroll();
 
+    // counter up plugin
+
+    $('.counters .value').counterUp({
+        delay: 10,
+        time: 1000 
+    });
 
 });

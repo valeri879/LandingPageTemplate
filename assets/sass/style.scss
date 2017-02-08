@@ -54,16 +54,26 @@
     }
 }
 
+#navigation{
+    background: transparent;
+    @media screen and (max-width: 768px) {
+        background:rgba(0,0,0,.5);
+    }
+}
+
 .navbar {
     &.fixed {
         @include transition(all .1s);
-        transform: translate(0, -20px);
+        top: 0;
         background: $Pink;
         .icon-bar {
             background-color: #fff;
         }
         .navbar-toggle:hover {
             background: $Green;
+        }
+        #navigation{
+            background: transparent;
         }
     }
     @include transition(all 0.2s);
@@ -332,6 +342,9 @@
         &:last-child {
             border-right: 1px solid $Green;
         }
+        @media screen and (max-width: 425px){
+            width: 100%;
+        }
     }
     .value {
         font-size: 72px;
@@ -483,10 +496,13 @@
     background: #e6fffa;
     padding: 90px 0;
 }
-
+ 
 .testimonials {
     .swiper-slide {
         padding: 0 85px;
+        @media screen and (max-width: 768px){
+            padding: 0 45px;
+        }
     }
     .icon {
         width: 150px;
@@ -496,6 +512,13 @@
         font-size: 64px;
         color: $Green;
         padding: 30px 0 0;
+        @media screen and (max-width: 768px){
+            width: 100px;
+            height: 100px;
+            font-size: 30px;
+            border: 2px solid;
+            margin: 0 auto 30px;
+        }
     }
     p {
         font: {
@@ -504,6 +527,10 @@
             style: italic;
         }
         color: $LightGrey;
+        @media screen and (max-width:  768px){
+            font-size: 16px;
+            text-align: center;
+        }
     }
     .subscription {
         font: {
@@ -511,6 +538,9 @@
             family: $Kaushan;
         }
         text-transform: capitalize;
+        @media screen and (max-width: 768px){
+            text-align: center; 
+        }
     }
     .line {
         position: relative;
@@ -520,6 +550,10 @@
         height: 3px;
         background: $Pink;
         margin: 0 10px 0 0;
+        @media screen and (max-width: 768px){
+            display: block; 
+            margin: 23px auto 0;
+        }
     }
     .fa-arrow-circle-left,
     .fa-arrow-circle-right {
