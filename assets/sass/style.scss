@@ -76,6 +76,10 @@
             background: transparent;
         }
     }
+    &.navbar-blog{
+        top: 0;
+        background: $Pink;
+    }
     @include transition(all 0.2s);
     top: 20px;
     background: transparent;
@@ -120,6 +124,70 @@
     .nav-header {
         display: block;
         @include clearfix;
+    }
+}
+
+.blog-list{
+    color: $DarkGrey;
+    margin: 50px 0 0 0;
+    .blog-container{
+        margin: 0 0 25px 0;
+    }
+    .blogs-title{
+        font: {
+            size: 38px;
+            family: $Montserrat;
+            weight: 700;
+        }
+        text-transform: uppercase;
+        margin: 50px 0;
+    }
+    .blog-image{
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 50% 50%;
+        margin: 0 0 40px 0;
+    }
+    .blog-heading{
+       font: {
+            size: 27px;
+            family: $Montserrat;
+            weight: 400;
+        }
+        margin: 0;
+    }
+    .blog-info{
+        margin: 10px 0;
+        div{
+            display: inline-block;
+            margin: 0 10px 0 0;
+            text-transform: capitalize;
+            font: {
+                size: 12px;
+                family: $Roboto;
+            }
+        }
+    }
+    p{
+        font: {
+            size: 14px;
+            family: $Roboto;
+        }
+    }
+    .btn{
+        border: 2px solid $Pink;
+        background: transparent;
+        color: $DarkGrey;
+        font: {
+            size: 14px;
+            family: $Montserrat;
+            weight: 400;
+        }
+        text-transform: uppercase;
+        border-radius: 20px;
     }
 }
 
