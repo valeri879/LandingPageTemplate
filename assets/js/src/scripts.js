@@ -16,7 +16,7 @@ $(document).ready(function() {
 
     var partnersSlider = new Swiper('.partners .swiper-container', {
         speed: 400,
-        spaceBetween: 0,
+        spaceBetween: -40,
         slidesPerView: 6,
         breakpoints: {
             // when window width is <= 320px
@@ -42,7 +42,9 @@ $(document).ready(function() {
                 slidesPerView: 5,
                 spaceBetween: 0
             }
-        }
+        },
+        nextButton: '.partners .swiper-button-next',
+        prevButton: '.partners .swiper-button-prev',
     });
 
     var workTestimonials = new Swiper('.work-testimonials .swiper-container', {
@@ -78,7 +80,7 @@ $(document).ready(function() {
 
     $('.counters .value').counterUp({
         delay: 10,
-        time: 1000 
+        time: 1000
     });
 
 });
