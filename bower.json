@@ -24,6 +24,7 @@
   "dependencies": {
     "bourbon": "^4.2.7",
     "counter-up": "^1.0.0",
-    "waypoints": "^4.0.1"
+    "waypoints": "^4.0.1",
+    "smoothscroll": "^0.3.4"
   }
 }

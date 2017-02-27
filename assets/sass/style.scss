@@ -102,6 +102,12 @@
             &:last-child a {
                 padding: 15px 0 15px 0;
             }
+            a {
+                &:focus {
+                    color: #fff;
+                    background: transparent;
+                }
+            }
             &.active a,
             &:hover a {
                 background: transparent;

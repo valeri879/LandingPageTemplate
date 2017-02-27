@@ -47,7 +47,7 @@ $(document).ready(function() {
         prevButton: '.partners .swiper-button-prev',
     });
 
-    var workTestimonials = new Swiper('.work-testimonials .swiper-container', {
+    var workTestimonials = new Swiper('.works-testimonials .swiper-container', {
         speed: 400,
         spaceBetween: 0,
         slidesPerView: 1
@@ -83,4 +83,20 @@ $(document).ready(function() {
         time: 1000
     });
 
+
+    //smoothscroll
+    $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
 });
